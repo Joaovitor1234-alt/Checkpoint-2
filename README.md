@@ -5,6 +5,7 @@
 // Integrantes: Victor Hugo Almeida Bahia, RM 564633
                // João Vitor Betiolli, RM 561835
               //  João Victor Caitano Tabuso, RM 562525
+  
 // Funcao para calcular a sequencia de Fibonacci
 void fibonacci(int n) {
     int fib[n];
