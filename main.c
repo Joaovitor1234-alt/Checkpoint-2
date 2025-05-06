@@ -1,4 +1,4 @@
-# Checkpoint-2
+// Checkpoint-2
 #include <stdio.h>
 #include <string.h>
 
