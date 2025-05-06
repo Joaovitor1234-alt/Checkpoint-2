@@ -7,7 +7,6 @@
               //  João Victor Caitano Tabuso, RM 562525
   
 // Funcao para calcular a sequencia de Fibonacci
-
 void fibonacci(int n) {
     int fib[n];
     fib[0] = 0;
