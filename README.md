@@ -67,3 +67,67 @@ void verificar_substring(char str1[], char str2[]) {
         printf("A segunda string NAO esta contida na primeira.\n");
     }
 }
+int main() {
+    int opcao, n;
+    char palavra[101], str1[101], str2[101];
+
+    do {
+        // Exibindo o menu
+        printf("===== MENU DE EXERCICIOS =====\n");
+        printf("1 - Sequencia de Fibonacci;\n");
+        printf("2 - Fatoriais;\n");
+        printf("3 - Verificar Palindromo;\n");
+        printf("4 - Verificar Substring;\n");
+        printf("Digite a opcao desejada (1 a 4, ou 0 para sair): ");
+        scanf("%d", &opcao);
+        getchar(); // Para limpar o buffer apos o scanf
+
+        switch (opcao) {
+            case 1:
+                // Opcao 1: Sequencia de Fibonacci
+                printf("Digite a quantidade de termos da sequencia de Fibonacci (1 a 50): ");
+                scanf("%d", &n);
+                if (n >= 1 && n <= 50) {
+                    fibonacci(n);
+                } else {
+                    printf("Valor invalido, N deve estar entre 1 e 50.\n");
+                }
+                break;
+            case 2:
+                // Opcao 2: Fatoriais
+                printf("Digite um numero inteiro (1 a 20): ");
+                scanf("%d", &n);
+                if (n >= 1 && n <= 20) {
+                    fatoriais(n);
+                } else {
+                    printf("Valor invalido, N deve estar entre 1 e 20.\n");
+                }
+                break;
+            case 3:
+                // Opcao 3: Verificar Palindromo
+                printf("Digite uma palavra: ");
+                scanf("%s", palavra);
+                verificar_palindromo(palavra);
+                break;
+            case 4:
+                // Opcao 4: Verificar Substring
+                printf("Digite a primeira string: ");
+                scanf("%s", str1);
+                printf("Digite a segunda string: ");
+                scanf("%s", str2);
+                verificar_substring(str1, str2);
+                break;
+            case 0:
+                printf("Saindo do programa.\n");
+                break;
+            default:
+                printf("Opcao invalida, tente novamente.\n");
+        }
+
+        printf("\n");
+
+    } while (opcao != 0);
+
+    return 0;
+}
+
