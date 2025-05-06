@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 
+// Integrantes: Victor Hugo Almeida Bahia, RM 564633
+                JOÃO...
+                JOÃ
 // Funcao para calcular a sequencia de Fibonacci
 void fibonacci(int n) {
     int fib[n];
